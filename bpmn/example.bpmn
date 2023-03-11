@@ -18,7 +18,20 @@
             </camunda:validation>
           </camunda:formField>
           <camunda:formField id="ccc" type="date" />
+          <camunda:formField id="teste" type="object" />
+          <camunda:formField id="campo_1" type="string" />
+          <camunda:formField id="campo_2" type="string" />
+          <camunda:formField id="campo_3" type="string" />
         </camunda:formData>
+        <camunda:inputOutput>
+          <camunda:inputParameter name="teste_object">
+            <camunda:list>
+              <camunda:value>campo_1</camunda:value>
+              <camunda:value>campo_2</camunda:value>
+              <camunda:value>campo_3</camunda:value>
+            </camunda:list>
+          </camunda:inputParameter>
+        </camunda:inputOutput>
       </bpmn:extensionElements>
       <bpmn:incoming>Flow_051djum</bpmn:incoming>
       <bpmn:outgoing>Flow_0k13hqf</bpmn:outgoing>
@@ -72,9 +85,6 @@
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="152" y="102" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_1g3mblg_di" bpmnElement="Event_1g3mblg">
-        <dc:Bounds x="942" y="102" width="36" height="36" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_0lz2nai_di" bpmnElement="Activity_One">
         <dc:Bounds x="299" y="80" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -84,13 +94,12 @@
       <bpmndi:BPMNShape id="BPMNShape_0f1xoee" bpmnElement="Activity_Three">
         <dc:Bounds x="731" y="80" width="100" height="80" />
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1g3mblg_di" bpmnElement="Event_1g3mblg">
+        <dc:Bounds x="942" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_051djum_di" bpmnElement="Flow_051djum">
         <di:waypoint x="188" y="120" />
         <di:waypoint x="299" y="120" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0x9gy06_di" bpmnElement="Flow_0x9gy06">
-        <di:waypoint x="831" y="120" />
-        <di:waypoint x="942" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0k13hqf_di" bpmnElement="Flow_0k13hqf">
         <di:waypoint x="399" y="120" />
@@ -99,6 +108,10 @@
       <bpmndi:BPMNEdge id="Flow_1t96fn1_di" bpmnElement="Flow_1t96fn1">
         <di:waypoint x="615" y="120" />
         <di:waypoint x="731" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0x9gy06_di" bpmnElement="Flow_0x9gy06">
+        <di:waypoint x="831" y="120" />
+        <di:waypoint x="942" y="120" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
